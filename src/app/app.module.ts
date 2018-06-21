@@ -9,6 +9,7 @@ import { DescriptionComponent } from './description/description.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { BarHomeComponent } from './bar-home/bar-home.component';
+import { QuantidadeComicsComponent } from './quantidade-comics/quantidade-comics.component';
 
 
 const appRoutes: Routes = [
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     DescriptionComponent,
-    BarHomeComponent
+    BarHomeComponent,
+    QuantidadeComicsComponent
   ],
   imports: [
     BrowserModule,

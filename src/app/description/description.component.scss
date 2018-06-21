@@ -16,3 +16,21 @@ img {
     font-size: 18px;
     color: #fff;
 }
+
+.button-buy {
+    display: inline-block;
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: orange;
+    color: white;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-decoration: none;
+    border: 0;
+    border-radius: 4px;
+    position: relative;
+    left: 320px;
+  }

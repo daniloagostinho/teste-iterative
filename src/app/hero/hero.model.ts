@@ -1,7 +1,7 @@
 export class Hero {
     
   constructor(
-      public name?: string,
+      public title?: string,
       public thumb?: string,
       public description?: string) { }
 }
