@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Router } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss'],
   providers: [DataService]
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
   public obj: any;
   public heroes: any;
 
@@ -16,6 +16,11 @@ export class HomeComponent {
     private data: DataService,  
     private router: Router) {
     this.getAllHeroes();
+   }
+
+
+   ngOnInit() {
+    localStorage.removeItem('compra');
    }
 
   getAllHeroes() {
