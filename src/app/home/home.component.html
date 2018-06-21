@@ -6,7 +6,7 @@
       <div class='card-content'>
         <div class='top-bar'>
           <span>
-            $12.95
+            {{hero.prices[0].price | json}}
           </span>
           <span class='float-right lnr lnr-heart'></span>
         </div>
@@ -23,15 +23,18 @@
         </div>
       </div>
       <div class='card-footer'>
+
+        <h4>Series</h4>
+        
         <div class='span'>
-          RED
+          {{hero.series.name}}
         </div>
-        <div class='span'>
+        <!-- <div class='span'>
           BEATS
         </div>
         <div class='span'>
           HEADPHONE
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
