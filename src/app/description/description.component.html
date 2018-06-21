@@ -1,14 +1,23 @@
 <app-bar-home></app-bar-home>
 
-<div class='body'>
-  <div class='container'>
-    <div class="card">
-      <img src="{{hero.thumb}}" />
-      <p>{{hero.description}}</p>
-
-      <div class="button" (click)="getHomepage()">
+<div class="wrapper">
+  <div class='body'>
+    <div class='container'>
+      <div class="card-comic">
+        <img src="{{hero.thumb}}" class=""/>
+        <div class="button" (click)="getHomepage()">
           <button>Voltar</button>
         </div>
+      </div>
+    </div>
+
+    <div class="card-description">
+      <h1>{{hero.title}}</h1>
+
+
+      <p>{{hero.description}}</p>
+
     </div>
   </div>
+
 </div>

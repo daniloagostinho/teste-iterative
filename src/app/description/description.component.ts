@@ -30,16 +30,20 @@ export class DescriptionComponent {
 
     this.data.getDescription(this.id).then(data => {
       this.obj = data;
-      console.log(this.obj);
 
-      this.hero.name = this.obj.data.results[0].name; 
+      this.hero.title = this.obj.data.results[0].title; 
       this.hero.thumb = this.obj.data.results[0].thumbnail.path +"."+ this.obj.data.results[0].thumbnail.extension;
       this.hero.description =  this.obj.data.results[0].description;
+
+      console.log('title >> ', this.hero.title);
+      console.log('thumb >> ', this.hero.thumb);
+      console.log('description >> ', this.hero.description);
+      
 
       console.log(this.hero);
 
       this.minhaCompra = {
-        name: this.hero,
+        title: this.hero.title,
         thumb: this.hero.thumb,
         description:  this.hero.description
       }

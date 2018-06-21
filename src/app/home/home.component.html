@@ -2,7 +2,7 @@
 
 <div class='body'>
   <div class='container'>
-    <div class='card' *ngFor="let hero of heroes" (click)="getDescription(hero.id)">
+    <div class='card' *ngFor="let hero of heroes">
       <div class='card-content'>
         <div class='top-bar'>
           <span>
@@ -29,12 +29,7 @@
         <div class='span'>
           {{hero.series.name}}
         </div>
-        <!-- <div class='span'>
-          BEATS
-        </div>
-        <div class='span'>
-          HEADPHONE
-        </div> -->
+        <button (click)="getDescription(hero.id)">Ver detalhes</button>
       </div>
     </div>
   </div>
