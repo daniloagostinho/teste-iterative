@@ -13,14 +13,14 @@ export class HomeComponent implements OnInit {
   public heroes: any;
 
   constructor(
-    private data: DataService,  
+    private data: DataService,
     private router: Router) {
     this.getAllHeroes();
    }
 
 
    ngOnInit() {
-    localStorage.removeItem('compra');
+    //localStorage.removeItem('compra');
    }
 
   getAllHeroes() {
@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
         this.heroes = this.obj.data.results;
 
         console.log('todos os resultados >>>> ', this.heroes);
-        
+
       });
   }
 

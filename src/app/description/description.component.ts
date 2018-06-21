@@ -18,12 +18,12 @@ export class DescriptionComponent {
   public minhaCompra: any;
 
   compra: any;
-  
+
   constructor(
-    public data: DataService, 
-    private route:ActivatedRoute, 
+    public data: DataService,
+    private route:ActivatedRoute,
     private router: Router) {
-      
+
     this.id = this.route.snapshot.params['id'];
 
     this.hero = new Hero();
@@ -31,14 +31,14 @@ export class DescriptionComponent {
     this.data.getDescription(this.id).then(data => {
       this.obj = data;
 
-      this.hero.title = this.obj.data.results[0].title; 
+      this.hero.title = this.obj.data.results[0].title;
       this.hero.thumb = this.obj.data.results[0].thumbnail.path +"."+ this.obj.data.results[0].thumbnail.extension;
       this.hero.description =  this.obj.data.results[0].description;
 
       console.log('title >> ', this.hero.title);
       console.log('thumb >> ', this.hero.thumb);
       console.log('description >> ', this.hero.description);
-      
+
 
       console.log(this.hero);
 
@@ -49,14 +49,15 @@ export class DescriptionComponent {
       }
 
       this.compra = JSON.stringify(this.minhaCompra);
-
-      localStorage.setItem("compra", this.compra);
     });
   }
-  
+
 
   getHomepage() {
     this.router.navigate(['home']);
   }
 
+  adcionarAoCarrinho() {
+    localStorage.setItem(this.hero.title, this.compra);
+  }
 }

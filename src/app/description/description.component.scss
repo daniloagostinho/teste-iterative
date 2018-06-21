@@ -17,7 +17,9 @@ img {
     color: #fff;
 }
 
-.button-buy {
+
+.button-buy,
+.button-voltar {
     display: inline-block;
     width: auto;
     height: 50px;
@@ -32,5 +34,9 @@ img {
     border: 0;
     border-radius: 4px;
     position: relative;
-    left: 320px;
+    left: 160px;
+  }
+  .button-voltar {
+    background: blue;
+    left: 0px;
   }
