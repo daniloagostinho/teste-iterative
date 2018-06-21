@@ -1,0 +1,54 @@
+<div class='header'>
+  <div class='title'>
+    <h4>The Minimalist</h4>
+  </div>
+</div>
+
+<div class='body'>
+  <div class='container'>
+    <div class='card' *ngFor="let hero of heroes" (click)="getDescription(hero.id)">
+      <div class='card-content'>
+        <div class='top-bar'>
+          <span>
+            $12.95
+          </span>
+          <span class='float-right lnr lnr-heart'></span>
+        </div>
+        <div class='img'>
+          <img src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}">
+        </div>
+      </div>
+      <div class='card-description'>
+        <div class='title'>
+          {{hero.name}}
+        </div>
+        <div class='cart'>
+          <span class='lnr lnr-cart'></span>
+        </div>
+      </div>
+      <div class='card-footer'>
+        <div class='span'>
+          RED
+        </div>
+        <div class='span'>
+          BEATS
+        </div>
+        <div class='span'>
+          HEADPHONE
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="container">
+  <div class="item" *ngFor="let hero of heroes" (click)="getDescription(hero.id)">
+    <img src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}">
+    <h2>{{hero.name}}</h2>
+
+    <div class="sub-main">
+      <button class="button-two"><span>Ver mais detalhes</span></button>
+    </div>
+  </div>
+</div> -->

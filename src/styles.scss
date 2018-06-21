@@ -1,0 +1,244 @@
+// /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Marvel');
+
+// .container {
+//     display: grid;
+//     grid-template-columns: 250px 250px 250px;
+//     grid-template-rows: 250px 250px;
+//     grid-gap: 4rem;
+//     padding: 50px;
+//   }
+
+
+//   .container h2,
+//   .container p,
+//   .container-descricao h2,
+//   .container-descricao p {
+//     padding: 10px;
+//     cursor: pointer;
+//     font-family: 'Marvel', sans-serif;
+//     color: #fff;
+//   }
+
+//   .container-descricao p {
+//     position: relative;
+//     bottom: 23px;
+//   }
+
+  
+//   .container-descricao {
+//   display: grid;
+//     grid-template-columns: 350px 250px 250px;
+//     grid-template-rows: 349px 50px;
+//     grid-gap: 4rem;
+//   }
+  
+//   /* OTHER STYLES */
+  
+//   body {
+//     background-color: #3b404e;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+  
+//   .item {
+//     background-color: #1d1c25;
+//     background-image: linear-gradient(130deg, #1d1c25 0%, #1d2333 85%, #1d1c22 100%);
+//     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+//     color: #fff;
+//     border-radius: 4px;
+//     border: 6px solid #171717;
+//   }
+
+
+//   img {
+//       max-width: 100%;
+//   }
+
+//   .button {
+//     background: #3498db;
+//     width: 180px;
+//     padding: 4px 0;
+    
+//     position: absolute;
+//     left: 50%;
+//     top: 50%;
+//     transform: translateX(-50%) translateY(-50%);
+//     border-radius: 3px;
+  
+//     p {
+//       font-family: 'Roboto'; 
+//       text-align: center;
+//       text-transform: uppercase;
+//       color: #FFF;
+//       user-select: none;
+//       font-family: 'Marvel', sans-serif;
+//       top: 2px;
+//     }
+    
+//     &:hover {
+//       cursor: pointer;
+//     }
+    
+//     &:after {
+//       content: "";
+//       display: block;
+//       position: absolute;
+//       width: 100%;
+//       height: 10%;
+//       border-radius: 50%;
+//       background-color: darken(#f1c40f, 20%);
+//       opacity: 0.4;
+//       bottom: -30px;
+//     }
+//   }
+
+
+html,
+body {
+  font-family: 'Marvel', sans-serif;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: #fcfcfc;
+}
+.header {
+  z-index: 99999;
+  width: 100%;
+  height: 70px;
+  background-color: #3b404e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.091);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cacaca;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+}
+.body {
+  height: 100vh;
+  width: 100%;
+  padding-top: 120px;
+}
+.container {
+  padding-top: 20px;
+  min-height: 100vh;
+  display: grid;
+  grid-auto-rows: 400px;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, minmax(200px, 300px));
+  justify-content: center;
+  align-items: stretch;
+  @media screen and (max-width: 720px) {
+    grid-template-columns: 1fr;
+    margin: 50px 30px;
+  }
+}
+
+.card {
+  position: relative;
+  padding: 10px;
+  background: white;
+  display: grid;
+  grid-template-rows: 8fr 1fr 1fr;
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.057);
+  transition: 0.2s ease-in;
+
+  .card-content {
+    .top-bar {
+      width: calc(100% - 40px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      .float-right {
+        float: right;
+      }
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .img {
+      width: 100%;
+      justify-content: bottom;
+      align-content: bottom;
+      text-align: center;
+      img {
+        max-width: 100%;
+        max-height: 220px;
+      }
+    }
+  }
+  .card-description {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    width: calc(100%-20px);
+    .title {
+      text-transform: uppercase;
+      text-align: left;
+    }
+    .cart {
+      float: right;
+      cursor: pointer;
+    }
+  }
+  .card-footer {
+    text-transform: uppercase;
+    padding: 0.3em;
+    border-top: 0.5px solid #ececec;
+    letter-spacing: 0.1em;
+    font-size: 11px;
+    color: white;
+    justify-items: left;
+    align-items: center;
+    display: flex;
+    .span {
+      margin: 5px;
+      width: auto;
+      background: #dedede;
+      padding: 4px 7px;
+      border-radius: 2px;
+      font-weight: 100;
+      cursor: pointer;
+      &:hover{
+        background: #aaaaaa;
+      }
+    }
+  }
+  &:hover {
+    transition: 0.2s ease-in;
+    transform: translateY(-10px);
+    box-shadow: 0px 45px 60px 0px rgba(0, 0, 0, 0.087);
+  }
+}
+
+.car-shopping {
+  width: 45px;
+  height: 50px;
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 48px;
+  background: #fff;
+  padding: 10px;
+}
+
+.car-shopping img {
+  position: relative;
+  top: 14px;
+  left: 10px;
+}
+
+  
