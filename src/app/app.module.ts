@@ -8,6 +8,7 @@ import { DataService } from './data.service';
 import { DescriptionComponent } from './description/description.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { BarHomeComponent } from './bar-home/bar-home.component';
 
 
 const appRoutes: Routes = [
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    BarHomeComponent
   ],
   imports: [
     BrowserModule,
