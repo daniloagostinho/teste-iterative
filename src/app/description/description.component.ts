@@ -58,6 +58,7 @@ export class DescriptionComponent {
   }
 
   adcionarAoCarrinho() {
-    localStorage.setItem(this.hero.title, this.compra);
+    localStorage.setItem("compra", this.compra);
+    //localStorage.setItem("compra", this.compra);
   }
 }

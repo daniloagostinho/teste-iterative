@@ -11,9 +11,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { BarHomeComponent } from './bar-home/bar-home.component';
 import { QuantidadeComicsComponent } from './quantidade-comics/quantidade-comics.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 const appRoutes: Routes = [
-  { 
+  {
     path: 'description', component: DescriptionComponent
   },
   {
@@ -35,6 +37,7 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
