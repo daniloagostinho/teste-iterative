@@ -2,35 +2,6 @@
 
 <div class='body'>
   <div class='container'>
-    <div class='card'>
-      <div class='card-content'>
-        <div class='top-bar'>
-          <span>
-            {{key}}
-          </span>
-          <span class='float-right lnr lnr-heart'></span>
-        </div>
-        <div class='img'>
-          <!-- <img src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}"> -->
-          <img src="{{getProdutosCarrinho.thumb}}" alt="">
-        </div>
-      </div>
-      <div class='card-description'>
-        <div class='title'>
-         <h2>{{getProdutosCarrinho.title}}</h2>
-
-         <p>{{getProdutosCarrinho.description}}</p>
-        </div>
-        <div class='cart'>
-          <span class='lnr lnr-cart'></span>
-        </div>
-      </div>
-      <div class='card-footer'>
-
-        <button  class="button-remove-car" (click)="removerDoCarrinho()">Remover do carrinho</button>
-
-        <button class="button-confirm-compra " (click)="confirmarCompra()">Confirmar compra</button>
-      </div>
-    </div>
+    <app-show-comics></app-show-comics>
   </div>
 </div>
