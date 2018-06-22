@@ -3,52 +3,18 @@
 <div class="container">
     <div class="wrapper-comics">
   <div class="row">
-    <div class="col-md-4" *ngFor="let hero of heroes">
+    <div class="col-md-3" *ngFor="let hero of heroes">
         <div class="card">
             <img class="card-img-top" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">{{hero.series.name}}</h5>
+              <button type="button" class="btn btn-primary" (click)="getDescription(hero.id)">Detalhes</button>
+              <span>
+                  US $ {{hero.prices[0].price | json}}
+              </span>
             </div>
           </div>
     </div>
   </div>
-
 </div>
 </div>
-
-<!-- <div class='body'>
-  <div class='container'>
-    <div class='card' *ngFor="let hero of heroes">
-      <div class='card-content'>
-        <div class='top-bar'>
-          <span>
-              US $ {{hero.prices[0].price | json}}
-          </span>
-          <span class='float-right lnr lnr-heart'></span>
-        </div>
-        <div class='img'>
-          <img src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}">
-        </div>
-      </div>
-      <div class='card-description'>
-        <div class='title'>
-          {{hero.name}}
-        </div>
-        <div class='cart'>
-          <span class='lnr lnr-cart'></span>
-        </div>
-      </div>
-      <div class='card-footer'>
-
-        <h4>Series</h4>
-
-        <div class='span'>
-          {{hero.series.name}}
-        </div>
-        <button (click)="getDescription(hero.id)">Ver detalhes</button>
-      </div>
-    </div>
-  </div>
-</div> -->
