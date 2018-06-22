@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { EventEmitterService } from '../event-emitter.service';
+
 @Component({
   selector: 'app-show-comics',
   templateUrl: './show-comics.component.html',
@@ -10,6 +12,8 @@ export class ShowComicsComponent implements OnInit {
   public getProdutosCarrinho;
   keys;
   quantidade_comics
+
+  showComics: boolean;
 
 
   constructor(private router: Router) {
@@ -21,6 +25,12 @@ export class ShowComicsComponent implements OnInit {
 
   loadingFeedback() {
     this.router.navigate(['feedback-usuario']);
+  }
+
+  removeComics() {
+    this.showComics = false;
+
+    EventEmitterService.get('removeComics').emit(false);
   }
 
 }

@@ -5,7 +5,6 @@
   <span class='float-right lnr lnr-heart'></span>
 </div>
 <div class='img'>
-  <!-- <img src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}"> -->
   <div *ngIf="getProdutosCarrinho">
     <img src="{{getProdutosCarrinho.thumb}}" alt="">
   </div>
@@ -24,9 +23,8 @@
 </div>
 <div class='card-footer'>
 
-  <button class="button-remove-car" (click)="removerDoCarrinho()">Remover do carrinho</button>
+  <button class="button-remove-car" (click)="removeComics()">Remover do carrinho</button>
 
   <button class="button-confirm-compra" (click)="loadingFeedback()">Confirmar compra</button>
 </div>
 
-<button (click)="botaoClick()">emitir evento global</button>
