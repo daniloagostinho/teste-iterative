@@ -1,7 +1,13 @@
 <app-bar-home></app-bar-home>
 
 <div class='body'>
+  <div class="message-usuario" *ngIf="!getProdutosCarrinho">
+      <h3>Desculpe mas nao foram adicionados nenhum item ainda! Voce pode voltar para lista quadrinhos clicando no botao a baixos.</h3>
+      <button>Voltar para home</button>
+    </div>
   <div class='container'>
-    <app-show-comics></app-show-comics>
+    <div *ngIf="getProdutosCarrinho">
+      <app-show-comics></app-show-comics>
+    </div>
   </div>
 </div>
