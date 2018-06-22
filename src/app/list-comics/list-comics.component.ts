@@ -16,6 +16,8 @@ export class ListComicsComponent implements OnInit {
     this.getProdutosCarrinho = JSON.parse(localStorage.getItem("compra"));
   }
 
+
+
   ngOnInit() {
   }
 

@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 
 import {ActivatedRoute} from '@angular/router';
 import { DataService } from '../data.service';
-
 import { Router } from '@angular/router';
+import { EventEmitterService } from '../event-emitter.service';
 
 @Component({
   selector: 'app-description',
@@ -18,6 +18,8 @@ export class DescriptionComponent {
   public minhaCompra: any;
 
   compra: any;
+
+  texto: string;
 
   constructor(
     public data: DataService,
@@ -59,6 +61,7 @@ export class DescriptionComponent {
 
   adcionarAoCarrinho() {
     localStorage.setItem("compra", this.compra);
-    //localStorage.setItem("compra", this.compra);
+
+    EventEmitterService.get('textChange').emit(1);
   }
 }
