@@ -9,12 +9,15 @@ import { Router } from '@angular/router';
 export class FeedbackUsuarioComponent implements OnInit {
 
   constructor(private router: Router) {
-    setTimeout(() => {
-      this.router.navigate(['dashboard']);
-   }, 2200);
+
   }
 
   ngOnInit() {
   }
+
+  getHomepage() {
+    this.router.navigate(['home'])
+  }
+
 
 }
