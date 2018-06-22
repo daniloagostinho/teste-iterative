@@ -54,7 +54,6 @@ export class DescriptionComponent {
     });
   }
 
-
   getHomepage() {
     this.router.navigate(['home']);
   }
@@ -63,5 +62,9 @@ export class DescriptionComponent {
     localStorage.setItem("compra", this.compra);
 
     EventEmitterService.get('textChange').emit(1);
+  }
+
+  verProdutosAdicionados() {
+    this.router.navigate(['list-comics'])
   }
 }

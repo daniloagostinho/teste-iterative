@@ -9,7 +9,7 @@ img {
 }
 
 .card-description {
-    width: 440px;
+    width: 570px;
     position: relative;
     bottom: 653px;
     left: 580px;
@@ -19,7 +19,8 @@ img {
 
 
 .button-buy,
-.button-voltar {
+.button-voltar,
+.ver-produtos {
     display: inline-block;
     width: auto;
     height: 50px;
@@ -27,7 +28,7 @@ img {
     text-align: center;
     background: orange;
     color: white;
-    font-size: 1.3rem;
+    font-size: 11px;
     padding-left: 1rem;
     padding-right: 1rem;
     text-decoration: none;
@@ -38,7 +39,6 @@ img {
   }
   .button-voltar {
     background: blue;
-    left: 0px;
   }
 
   img {

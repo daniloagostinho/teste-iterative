@@ -17,5 +17,7 @@ export class FeedbackUsuarioComponent implements OnInit {
 
   getHomepage() {
     this.router.navigate(['home'])
+
+    localStorage.clear();
   }
 }
