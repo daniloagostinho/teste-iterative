@@ -1,6 +1,24 @@
 <app-bar-home></app-bar-home>
 
-<div class='body'>
+<div class="container">
+    <div class="wrapper-comics">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let hero of heroes">
+        <div class="card">
+            <img class="card-img-top" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- <div class='body'>
   <div class='container'>
     <div class='card' *ngFor="let hero of heroes">
       <div class='card-content'>
@@ -33,4 +51,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
