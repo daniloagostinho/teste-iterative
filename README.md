@@ -14,6 +14,10 @@ Para rodar o teste siga os seguintes passos:
 
 `npm install`
 
+## Para rodar os testes com Karma digite o comando
+
+` ng test`
+
 ## Servindo a Aplicação
 
 Para rodar o teste execute no terminal `ng serve` abra o seu navegador no endereço `http://localhost:4200/`.
