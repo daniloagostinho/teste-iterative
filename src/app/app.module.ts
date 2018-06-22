@@ -12,6 +12,7 @@ import { BarHomeComponent } from './bar-home/bar-home.component';
 import { QuantidadeComicsComponent } from './quantidade-comics/quantidade-comics.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ListComicsComponent } from './list-comics/list-comics.component';
 
 
 const appRoutes: Routes = [
@@ -23,6 +24,9 @@ const appRoutes: Routes = [
   },
   {
     path: 'home', component: HomeComponent
+  },
+  {
+    path: 'list-comics', component: ListComicsComponent
   }
 ];
 
@@ -32,7 +36,8 @@ const appRoutes: Routes = [
     HomeComponent,
     DescriptionComponent,
     BarHomeComponent,
-    QuantidadeComicsComponent
+    QuantidadeComicsComponent,
+    ListComicsComponent
   ],
   imports: [
     BrowserModule,
