@@ -20,6 +20,7 @@ export class QuantidadeComicsComponent implements OnInit {
 
     if(this.hasChaveLocalStorage("compra")) {
       this.keys = Object.keys(this.getProdutosCarrinho).map(key => key);
+      this.title = 1;
     } else {
       this.title = 0;
     }
