@@ -10,6 +10,7 @@ import { ShowComicsComponent } from './show-comics/show-comics.component';
 import { FooterComponent } from './footer/footer.component';
 import { DetalheCompraComponent } from './detalhe-compra/detalhe-compra.component';
 import { RatingComponent } from './rating/rating.component';
+import { ConfirmPagamentoComponent } from './confirm-pagamento/confirm-pagamento.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { RatingComponent } from './rating/rating.component';
     ShowComicsComponent,
     FooterComponent,
     DetalheCompraComponent,
-    RatingComponent
+    RatingComponent,
+    ConfirmPagamentoComponent
     ],
   exports: [
     BarHomeComponent,
@@ -36,7 +38,8 @@ import { RatingComponent } from './rating/rating.component';
     ListComicsComponent,
     ShowComicsComponent,
     DetalheCompraComponent,
-    RatingComponent],
+    RatingComponent,
+    ConfirmPagamentoComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class ComponentsModule { }

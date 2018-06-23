@@ -5,6 +5,7 @@ import { DescriptionComponent } from './description/description.component';
 import { HomeComponent } from './home/home.component';
 import { ListComicsComponent } from './list-comics/list-comics.component';
 import { FeedbackUsuarioComponent } from './feedback-usuario/feedback-usuario.component';
+import { ConfirmPagamentoComponent } from './confirm-pagamento/confirm-pagamento.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -22,6 +23,9 @@ const routes: Routes = [
   },
   {
     path: 'feedback-usuario', component: FeedbackUsuarioComponent
+  },
+  {
+    path: 'confirm-pagamento', component: ConfirmPagamentoComponent
   }
 ];
 

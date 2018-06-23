@@ -2,7 +2,7 @@ import { DataService } from './../services/data.service';
 import { Hero } from './../hero/hero.model';
 import { Component } from '@angular/core';
 
-import {ActivatedRoute} from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Router } from '@angular/router';
 import { EventEmitterService } from '../services/event-emitter.service';
 
@@ -23,7 +23,7 @@ export class DescriptionComponent {
 
   constructor(
     public data: DataService,
-    private route:ActivatedRoute,
+    private route: ActivatedRoute,
     private router: Router) {
 
     this.id = this.route.snapshot.params['id'];
@@ -34,13 +34,13 @@ export class DescriptionComponent {
       this.obj = data;
 
       this.hero.title = this.obj.data.results[0].title;
-      this.hero.thumb = this.obj.data.results[0].thumbnail.path +"."+ this.obj.data.results[0].thumbnail.extension;
-      this.hero.description =  this.obj.data.results[0].description;
+      this.hero.thumb = this.obj.data.results[0].thumbnail.path + "." + this.obj.data.results[0].thumbnail.extension;
+      this.hero.description = this.obj.data.results[0].description;
 
       this.minhaCompra = {
         title: this.hero.title,
         thumb: this.hero.thumb,
-        description:  this.hero.description
+        description: this.hero.description
       }
 
       this.compra = JSON.stringify(this.minhaCompra);
@@ -58,6 +58,10 @@ export class DescriptionComponent {
   }
 
   verProdutosAdicionados() {
-    this.router.navigate(['list-comics'])
+    this.router.navigate(['list-comics']);
+  }
+
+  getConfirmPagamento() {
+    this.router.navigate(['confirm-pagamento']);
   }
 }
