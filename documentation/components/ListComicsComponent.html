@@ -112,14 +112,14 @@
                         <a href="modules/ComponentsModule.html" data-type="entity-link">ComponentsModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-ComponentsModule-40fb4f63a44241561ae85eb22af25b4b"
+                                        data-target="#xs-components-links-module-ComponentsModule-f2348d2dde6b1648ef150eb3e1bd32f0"
                                     >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="xs-components-links-module-ComponentsModule-40fb4f63a44241561ae85eb22af25b4b"
+                                        id="xs-components-links-module-ComponentsModule-f2348d2dde6b1648ef150eb3e1bd32f0"
                                     >
                                         <li class="link">
                                             <a href="components/BarHomeComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">BarHomeComponent</a>
@@ -129,6 +129,9 @@
                                         </li>
                                         <li class="link">
                                             <a href="components/FeedbackUsuarioComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">FeedbackUsuarioComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/FooterComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">FooterComponent</a>
                                         </li>
                                         <li class="link">
                                             <a href="components/HomeComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">HomeComponent</a>
@@ -148,22 +151,6 @@
             </ul>
         </li>
 
-                <li class="chapter">
-                    <div class="simple menu-toggler" data-toggle="collapse"
-                            data-target="#xs-components-links"
-                        >
-                        <span class="fa fa-fw fa-cogs"></span>
-                        <span>Components</span>
-                        <span class="fa fa-angle-down"></span>
-                    </div>
-                    <ul class="links collapse"
-                            id="xs-components-links"
-                        >
-                            <li class="link">
-                                <a href="components/FooterComponent.html" data-type="entity-link">FooterComponent</a>
-                            </li>
-                    </ul>
-                </li>
 
 
         <li class="chapter">
@@ -340,14 +327,14 @@
                         <a href="modules/ComponentsModule.html" data-type="entity-link">ComponentsModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-ComponentsModule-40fb4f63a44241561ae85eb22af25b4b"
+                                        data-target="#components-links-module-ComponentsModule-f2348d2dde6b1648ef150eb3e1bd32f0"
 >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="components-links-module-ComponentsModule-40fb4f63a44241561ae85eb22af25b4b"
+                                        id="components-links-module-ComponentsModule-f2348d2dde6b1648ef150eb3e1bd32f0"
 >
                                         <li class="link">
                                             <a href="components/BarHomeComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">BarHomeComponent</a>
@@ -357,6 +344,9 @@
                                         </li>
                                         <li class="link">
                                             <a href="components/FeedbackUsuarioComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">FeedbackUsuarioComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/FooterComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">FooterComponent</a>
                                         </li>
                                         <li class="link">
                                             <a href="components/HomeComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">HomeComponent</a>
@@ -376,22 +366,6 @@
             </ul>
         </li>
 
-                <li class="chapter">
-                    <div class="simple menu-toggler" data-toggle="collapse"
-                            data-target="#components-links"
->
-                        <span class="fa fa-fw fa-cogs"></span>
-                        <span>Components</span>
-                        <span class="fa fa-angle-down"></span>
-                    </div>
-                    <ul class="links collapse"
-                            id="components-links"
->
-                            <li class="link">
-                                <a href="components/FooterComponent.html" data-type="entity-link">FooterComponent</a>
-                            </li>
-                    </ul>
-                </li>
 
 
         <li class="chapter">
@@ -860,11 +834,10 @@ export class ListComicsComponent {
 
   &lt;div class&#x3D;&#x27;container&#x27;&gt;
     &lt;div *ngIf&#x3D;&quot;getProdutosCarrinho&quot;&gt;
-      {{showComics}}
-        &lt;div class&#x3D;&quot;carrinho-vazio&quot; *ngIf&#x3D;&quot;!showComics&quot;&gt;
-            &lt;h5&gt;Seu carrinho agora esta Vazio volte as compras..&lt;/h5&gt;
-            &lt;button (click)&#x3D;&quot;irParaHome()&quot;&gt;Voltar para home&lt;/button&gt;
-          &lt;/div&gt;
+      &lt;div class&#x3D;&quot;carrinho-vazio&quot; *ngIf&#x3D;&quot;!showComics&quot;&gt;
+        &lt;h5&gt;Seu carrinho agora esta Vazio volte as compras..&lt;/h5&gt;
+        &lt;button class&#x3D;&quot;btn btn-dark&quot; (click)&#x3D;&quot;irParaHome()&quot;&gt;Voltar para home&lt;/button&gt;
+      &lt;/div&gt;
 
       &lt;div *ngIf&#x3D;&quot;showComics&quot;&gt;
         &lt;app-show-comics&gt;&lt;/app-show-comics&gt;
@@ -872,6 +845,7 @@ export class ListComicsComponent {
 
     &lt;/div&gt;
   &lt;/div&gt;
+
 &lt;/div&gt;
 
 &lt;app-footer&gt;&lt;/app-footer&gt;
@@ -903,7 +877,7 @@ export class ListComicsComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><app-bar-home></app-bar-home><div class="content-list">  <div class="message-usuario" *ngIf="!getProdutosCarrinho">    <p>Desculpe mas nao foram adicionados nenhum item ainda! Voce pode voltar para lista quadrinhos clicando no botao a baixos.</p>    <button class="btn btn-dark" (click)="irParaHome()">Voltar para home</button>  </div>  <div class=\'container\'>    <div *ngIf="getProdutosCarrinho">      {{showComics}}        <div class="carrinho-vazio" *ngIf="!showComics">            <h5>Seu carrinho agora esta Vazio volte as compras..</h5>            <button (click)="irParaHome()">Voltar para home</button>          </div>      <div *ngIf="showComics">        <app-show-comics></app-show-comics>      </div>    </div>  </div></div><app-footer></app-footer></div>'
+        var COMPONENT_TEMPLATE = '<div><app-bar-home></app-bar-home><div class="content-list">  <div class="message-usuario" *ngIf="!getProdutosCarrinho">    <p>Desculpe mas nao foram adicionados nenhum item ainda! Voce pode voltar para lista quadrinhos clicando no botao a baixos.</p>    <button class="btn btn-dark" (click)="irParaHome()">Voltar para home</button>  </div>  <div class=\'container\'>    <div *ngIf="getProdutosCarrinho">      <div class="carrinho-vazio" *ngIf="!showComics">        <h5>Seu carrinho agora esta Vazio volte as compras..</h5>        <button class="btn btn-dark" (click)="irParaHome()">Voltar para home</button>      </div>      <div *ngIf="showComics">        <app-show-comics></app-show-comics>      </div>    </div>  </div></div><app-footer></app-footer></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BarHomeComponent', 'selector': 'app-bar-home'},{'name': 'DescriptionComponent', 'selector': 'app-description'},{'name': 'FeedbackUsuarioComponent', 'selector': 'app-feedback-usuario'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ListComicsComponent', 'selector': 'app-list-comics'},{'name': 'QuantidadeComicsComponent', 'selector': 'app-quantidade-comics'},{'name': 'ShowComicsComponent', 'selector': 'app-show-comics'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ListComicsComponent'};

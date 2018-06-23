@@ -112,14 +112,14 @@
                         <a href="modules/ComponentsModule.html" data-type="entity-link">ComponentsModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-ComponentsModule-40fb4f63a44241561ae85eb22af25b4b"
+                                        data-target="#xs-components-links-module-ComponentsModule-f2348d2dde6b1648ef150eb3e1bd32f0"
                                     >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="xs-components-links-module-ComponentsModule-40fb4f63a44241561ae85eb22af25b4b"
+                                        id="xs-components-links-module-ComponentsModule-f2348d2dde6b1648ef150eb3e1bd32f0"
                                     >
                                         <li class="link">
                                             <a href="components/BarHomeComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">BarHomeComponent</a>
@@ -129,6 +129,9 @@
                                         </li>
                                         <li class="link">
                                             <a href="components/FeedbackUsuarioComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">FeedbackUsuarioComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/FooterComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">FooterComponent</a>
                                         </li>
                                         <li class="link">
                                             <a href="components/HomeComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">HomeComponent</a>
@@ -148,22 +151,6 @@
             </ul>
         </li>
 
-                <li class="chapter">
-                    <div class="simple menu-toggler" data-toggle="collapse"
-                            data-target="#xs-components-links"
-                        >
-                        <span class="fa fa-fw fa-cogs"></span>
-                        <span>Components</span>
-                        <span class="fa fa-angle-down"></span>
-                    </div>
-                    <ul class="links collapse"
-                            id="xs-components-links"
-                        >
-                            <li class="link">
-                                <a href="components/FooterComponent.html" data-type="entity-link">FooterComponent</a>
-                            </li>
-                    </ul>
-                </li>
 
 
         <li class="chapter">
@@ -340,14 +327,14 @@
                         <a href="modules/ComponentsModule.html" data-type="entity-link">ComponentsModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-ComponentsModule-40fb4f63a44241561ae85eb22af25b4b"
+                                        data-target="#components-links-module-ComponentsModule-f2348d2dde6b1648ef150eb3e1bd32f0"
 >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="components-links-module-ComponentsModule-40fb4f63a44241561ae85eb22af25b4b"
+                                        id="components-links-module-ComponentsModule-f2348d2dde6b1648ef150eb3e1bd32f0"
 >
                                         <li class="link">
                                             <a href="components/BarHomeComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">BarHomeComponent</a>
@@ -357,6 +344,9 @@
                                         </li>
                                         <li class="link">
                                             <a href="components/FeedbackUsuarioComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">FeedbackUsuarioComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/FooterComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">FooterComponent</a>
                                         </li>
                                         <li class="link">
                                             <a href="components/HomeComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">HomeComponent</a>
@@ -376,22 +366,6 @@
             </ul>
         </li>
 
-                <li class="chapter">
-                    <div class="simple menu-toggler" data-toggle="collapse"
-                            data-target="#components-links"
->
-                        <span class="fa fa-fw fa-cogs"></span>
-                        <span>Components</span>
-                        <span class="fa fa-angle-down"></span>
-                    </div>
-                    <ul class="links collapse"
-                            id="components-links"
->
-                            <li class="link">
-                                <a href="components/FooterComponent.html" data-type="entity-link">FooterComponent</a>
-                            </li>
-                    </ul>
-                </li>
 
 
         <li class="chapter">
@@ -556,6 +530,27 @@
     <h3 id="index">Index</h3>
     <table class="table table-sm table-bordered index-table">
         <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#heroes">heroes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#obj">obj</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
 
                 <tr>
                     <td class="col-md-4">
@@ -586,15 +581,45 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor()</code>
+<code>constructor(data: <a href="../injectables/DataService.html">DataService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/app/footer/footer.component.ts:8</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/footer/footer.component.ts:10</a></div>
                             </td>
                         </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>data</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/DataService.html" target="_self" >DataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
             </tbody>
         </table>
 </section>
@@ -630,7 +655,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/footer/footer.component.ts:12</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/footer/footer.component.ts:14</a></div>
                             </td>
                         </tr>
 
@@ -648,23 +673,108 @@
         </table>
 </section>
 
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="heroes"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                                <span class="modifier">Optional</span>
+                            heroes
+                            </b>
+                            <a href="#heroes"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>heroes:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/app/footer/footer.component.ts:10</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="obj"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                                <span class="modifier">Optional</span>
+                            obj
+                            </b>
+                            <a href="#obj"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>obj:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="9" class="link-to-prism">src/app/footer/footer.component.ts:9</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
 
 </div>
 
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
-
+import { DataService } from &#x27;../services/data.service&#x27;;
 @Component({
   selector: &#x27;app-footer&#x27;,
   templateUrl: &#x27;./footer.component.html&#x27;,
   styleUrls: [&#x27;./footer.component.scss&#x27;]
 })
 export class FooterComponent implements OnInit {
+  public obj?: any;
+  public heroes?: any;
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
+    this.data.load()
+    .then(data &#x3D;&gt; {
+      this.obj &#x3D; data;
+      this.heroes &#x3D; this.obj.copyright;
+    });
   }
 
 }
@@ -673,7 +783,7 @@ export class FooterComponent implements OnInit {
 
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;footer class&#x3D;&quot;footer&quot;&gt;
-  &lt;p&gt;Rodape&lt;/p&gt;
+  &lt;p&gt;{{heroes}}&lt;/p&gt;
 &lt;/footer&gt;
 </code></pre>
     </div>
@@ -703,7 +813,7 @@ export class FooterComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><footer class="footer">  <p>Rodape</p></footer></div>'
+        var COMPONENT_TEMPLATE = '<div><footer class="footer">  <p>{{heroes}}</p></footer></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BarHomeComponent', 'selector': 'app-bar-home'},{'name': 'DescriptionComponent', 'selector': 'app-description'},{'name': 'FeedbackUsuarioComponent', 'selector': 'app-feedback-usuario'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ListComicsComponent', 'selector': 'app-list-comics'},{'name': 'QuantidadeComicsComponent', 'selector': 'app-quantidade-comics'},{'name': 'ShowComicsComponent', 'selector': 'app-show-comics'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'FooterComponent'};
