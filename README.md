@@ -48,6 +48,6 @@ O resultado se parecerá com isso:
 
 ## Servindo a Aplicação
 
-Para rodar o teste execute no terminal `ng serve` abra o seu navegador no endereço `http://localhost:4200/`.
+Para rodar a aplicaçao execute no terminal `ng serve` abra o seu navegador no endereço `http://localhost:4200/`.
 
 Quaisquer duvidas podem entrar em contato comigo atraves do e-mail: danilodev.silva@gmail.com
