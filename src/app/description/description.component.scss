@@ -1,8 +1,15 @@
-.wrapper {
-    background-image: url('../../assets/img/bg_marvel.gif');
-    height: 100%;
-    width: 100%;
+.wrapper-description {
+  background-image: url('../../assets/img/bg_marvel.gif');
+  height: 100%;
+  width: 100%;
+  height: 100vh;
 }
+
+.wrapper-description .row {
+  margin: 150px auto;
+  float: left;
+}
+
 
 img {
     max-width: 100%;

@@ -9,6 +9,7 @@
 body {
   font-family: 'Marvel', sans-serif;
   background: #fcfcfc;
+  height: 100vh;
 }
 .header {
   z-index: 99999;
@@ -89,24 +90,24 @@ body {
 //       }
 //     }
 //   }
-//   .card-description {
-//     padding: 10px;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     font-weight: 400;
-//     font-size: 14px;
-//     letter-spacing: 0.1em;
-//     width: calc(100%-20px);
-//     .title {
-//       text-transform: uppercase;
-//       text-align: left;
-//     }
-//     .cart {
-//       float: right;
-//       cursor: pointer;
-//     }
-//   }
+  // .card-description {
+  //   padding: 10px;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   font-weight: 400;
+  //   font-size: 14px;
+  //   letter-spacing: 0.1em;
+  //   width: calc(100%-20px);
+  //   .title {
+  //     text-transform: uppercase;
+  //     text-align: left;
+  //   }
+  //   .cart {
+  //     float: right;
+  //     cursor: pointer;
+  //   }
+  // }
 //   .card-footer {
 //     text-transform: uppercase;
 //     padding: 0.3em;
@@ -142,8 +143,8 @@ body {
 // }
 
 .car-shopping {
-  width: 45px;
-  height: 50px;
+  width: 157px;
+  height: 70px;
   float: right;
   position: absolute;
   top: 0px;
@@ -154,7 +155,15 @@ body {
 }
 
 .car-shopping img {
-  position: relative;
-  top: 14px;
-  left: 10px;
+  display: block;
+  margin: 30px auto;
+}
+
+.wrapper-comics {
+  height: 100%;
+  width: 100%;
+}
+
+.wrapper-comics .row {
+  margin: 150px auto;
 }
