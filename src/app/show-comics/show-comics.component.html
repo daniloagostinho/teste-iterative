@@ -1,30 +1,26 @@
-<div class='top-bar'>
-  <span>
-    {{key}}
-  </span>
-  <span class='float-right lnr lnr-heart'></span>
-</div>
-<div class='img'>
-  <div *ngIf="getProdutosCarrinho">
-    <img src="{{getProdutosCarrinho.thumb}}" alt="">
-  </div>
-</div>
-<div class='card-description'>
-  <div class='title'>
-    <div *ngIf="getProdutosCarrinho">
-      <h2>{{getProdutosCarrinho.title}}</h2>
+<div class="wrapper-description">
+  <div class='body'>
+    <div class='container'>
+      <div class="wrapper-comics">
+        <div class="row">
+          <div class="col-sm-6">
 
-      <p>{{getProdutosCarrinho.description}}</p>
+            <div *ngIf="getProdutosCarrinho">
+              <img src="{{getProdutosCarrinho.thumb}}" alt="">
+            </div>
+            <div *ngIf="getProdutosCarrinho">
+              <h2>{{getProdutosCarrinho.title}}</h2>
+
+              <p>{{getProdutosCarrinho.description}}</p>
+            </div>
+
+            <button class="btn btn-danger" (click)="removeComics()">Remover do carrinho</button>
+
+            <button class="btn btn-success" (click)="loadingFeedback()">Confirmar compra</button>
+
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-  <div class='cart'>
-    <span class='lnr lnr-cart'></span>
-  </div>
 </div>
-<div class='card-footer'>
-
-  <button class="button-remove-car" (click)="removeComics()">Remover do carrinho</button>
-
-  <button class="button-confirm-compra" (click)="loadingFeedback()">Confirmar compra</button>
-</div>
-
