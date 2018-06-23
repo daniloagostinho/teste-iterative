@@ -28,6 +28,15 @@ Para rodar o teste siga os seguintes passos:
 - [x] Performance
 - [x] Acesso com performatico e com segurancaa Api da Marvel
 
+## Documentacao do teste
+
+Foi usado o [https://compodoc.app/](Compododoc) para gerar uma rica documentacao que aborda a arquiteura que foi utilizada. Voce pode visualiza-la digitando o comando no terminal:
+
+`compodoc -s`
+
+Abra seu navegador acessando o endereco: 
+
+`http://127.0.0.1:8080`
 
 ## Servindo a Aplicação
 
