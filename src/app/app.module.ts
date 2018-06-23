@@ -16,25 +16,7 @@ import { ListComicsComponent } from './list-comics/list-comics.component';
 import { ShowComicsComponent } from './show-comics/show-comics.component';
 import { FeedbackUsuarioComponent } from './feedback-usuario/feedback-usuario.component';
 import { FooterComponent } from './footer/footer.component';
-
-
-const appRoutes: Routes = [
-  {
-    path: 'description', component: DescriptionComponent
-  },
-  {
-    path: '', component: HomeComponent
-  },
-  {
-    path: 'home', component: HomeComponent
-  },
-  {
-    path: 'list-comics', component: ListComicsComponent
-  },
-  {
-    path: 'feedback-usuario', component: FeedbackUsuarioComponent
-  }
-];
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -52,10 +34,7 @@ const appRoutes: Routes = [
     BrowserModule,
     HttpModule,
     FormsModule,
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
+    AppRoutingModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
