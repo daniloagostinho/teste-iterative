@@ -8,7 +8,7 @@ Para rodar o teste siga os seguintes passos:
 
 ## Clone a Aplicação
 
-` git clone https://github.com/daniloagostinho/iterative-teste.git`
+` git clone https://github.com/daniloagostinho/teste-iterative.git`
 
 ## Instale as Dependências do projeto
 `cd test-iterative`
