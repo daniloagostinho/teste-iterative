@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { ListComicsComponent } from './list-comics/list-comics.component';
 import { ShowComicsComponent } from './show-comics/show-comics.component';
 import { FooterComponent } from './footer/footer.component';
+import { DetalheCompraComponent } from './detalhe-compra/detalhe-compra.component';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   imports: [
@@ -21,7 +23,9 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     ListComicsComponent,
     ShowComicsComponent,
-    FooterComponent
+    FooterComponent,
+    DetalheCompraComponent,
+    RatingComponent
     ],
   exports: [
     BarHomeComponent,
@@ -30,7 +34,9 @@ import { FooterComponent } from './footer/footer.component';
     FeedbackUsuarioComponent,
     HomeComponent,
     ListComicsComponent,
-    ShowComicsComponent],
+    ShowComicsComponent,
+    DetalheCompraComponent,
+    RatingComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class ComponentsModule { }

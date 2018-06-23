@@ -23,10 +23,18 @@
 
           <div class="col-sm-6">
             <h1>{{hero.title}}</h1>
-            <p>{{hero.description}}</p>
-            <button class="btn btn-dark" (click)="getHomepage()">Quantidade</button>
-            <button class="btn btn-dark" (click)="getHomepage()">Comprar agora</button>
-            <button class="btn btn-success" (click)="adcionarAoCarrinho()">Adicionar ao carrinho</button>
+            <app-rating></app-rating>
+            <ul>
+              <li>Visa</li>
+              <li>masterCard</li>
+              <li>boleto</li>
+            </ul>
+            <p>Mais informaçoes</p>
+            <h2>U$ 200,00</h2>
+            <!-- <p>{{hero.description}}</p> -->
+            <input type="number" placeholder="Quantidade" />
+            <button class="btn btn-primary" (click)="getHomepage()">Comprar agora</button>
+            <button class="btn btn-outline-primary" (click)="adcionarAoCarrinho()">Adicionar ao carrinho</button>
           </div>
         </div>
       </div>
