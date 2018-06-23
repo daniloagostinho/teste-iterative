@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { EventEmitterService } from '../services/event-emitter.service';
 
 @Component({
   selector: 'app-feedback-usuario',
@@ -13,6 +14,7 @@ export class FeedbackUsuarioComponent implements OnInit {
   }
 
   ngOnInit() {
+    EventEmitterService.get('textChange').emit(0);
   }
 
   getHomepage() {
