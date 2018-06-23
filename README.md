@@ -34,6 +34,10 @@ Foi usado o [Compodoc](https://compodoc.app/) para gerar uma rica documentação
 
 `compodoc -s`
 
+O Compodoc já vem como dependencia de desenvolvimento, mas caso você encontre erro ao rodar o comando acima tente instalar globalmente o compodoc da seguinte maneira:
+
+`npm install -g "@compodoc/compodoc`
+
 Abra seu navegador acessando o endereco: 
 
 `http://127.0.0.1:8080`
