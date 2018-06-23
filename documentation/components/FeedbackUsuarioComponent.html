@@ -728,11 +728,11 @@ export class FeedbackUsuarioComponent implements OnInit {
         <pre class="line-numbers"><code class="language-html">&lt;app-bar-home&gt;&lt;/app-bar-home&gt;
 &lt;div class&#x3D;&quot;wrapper&quot;&gt;
   &lt;div class&#x3D;&quot;content-feedback&quot;&gt;
-    &lt;h2&gt;Sua compra foi realizada com sucesso!&lt;/h2&gt;
+    &lt;h2 class&#x3D;&quot;text-success&quot;&gt;Sua compra foi realizada com sucesso!&lt;/h2&gt;
 
-    &lt;p&gt;Agradecemos a prefência, aguarde 30 segundos e voce sera redirecinado para home.&lt;/p&gt;
+    &lt;p class&#x3D;&quot;text-dark&quot;&gt;Agradecemos a prefência, aguarde 30 segundos e voce sera redirecinado para home.&lt;/p&gt;
 
-    &lt;button class&#x3D;&quot;button-voltar&quot; (click)&#x3D;&quot;getHomepage()&quot;&gt;Voltar para home&lt;/button&gt;
+    &lt;button class&#x3D;&quot;btn btn-dark&quot; (click)&#x3D;&quot;getHomepage()&quot;&gt;Voltar para home&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
@@ -763,7 +763,7 @@ export class FeedbackUsuarioComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><app-bar-home></app-bar-home><div class="wrapper">  <div class="content-feedback">    <h2>Sua compra foi realizada com sucesso!</h2>    <p>Agradecemos a prefência, aguarde 30 segundos e voce sera redirecinado para home.</p>    <button class="button-voltar" (click)="getHomepage()">Voltar para home</button>  </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><app-bar-home></app-bar-home><div class="wrapper">  <div class="content-feedback">    <h2 class="text-success">Sua compra foi realizada com sucesso!</h2>    <p class="text-dark">Agradecemos a prefência, aguarde 30 segundos e voce sera redirecinado para home.</p>    <button class="btn btn-dark" (click)="getHomepage()">Voltar para home</button>  </div></div></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BarHomeComponent', 'selector': 'app-bar-home'},{'name': 'DescriptionComponent', 'selector': 'app-description'},{'name': 'FeedbackUsuarioComponent', 'selector': 'app-feedback-usuario'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ListComicsComponent', 'selector': 'app-list-comics'},{'name': 'QuantidadeComicsComponent', 'selector': 'app-quantidade-comics'},{'name': 'ShowComicsComponent', 'selector': 'app-show-comics'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'FeedbackUsuarioComponent'};

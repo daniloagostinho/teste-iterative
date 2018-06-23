@@ -7,7 +7,7 @@ import { ListComicsComponent } from './list-comics/list-comics.component';
 import { FeedbackUsuarioComponent } from './feedback-usuario/feedback-usuario.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: 'description', component: DescriptionComponent
   },
