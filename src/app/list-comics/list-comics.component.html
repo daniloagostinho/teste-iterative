@@ -4,7 +4,7 @@
   <div class="title-cards">
     <div class="row">
       <div class="col-md-12">
-        <h4>Items do carinho</h4>
+        <h4>Itens</h4>
       </div>
     </div>
   </div>
@@ -13,7 +13,7 @@
 
 <div class="content-list">
   <div class="message-usuario" *ngIf="!getProdutosCarrinho">
-    <p>Desculpe mas nao foram adicionados nenhum item ainda! Voce pode voltar para lista quadrinhos clicando no botao a baixos.</p>
+    <p>Seu carrinho está vazio volte as compras, clicando no botao abaixo.</p>
     <button class="btn btn-dark" (click)="irParaHome()">Voltar para home</button>
   </div>
 
@@ -21,7 +21,7 @@
   <div class='container'>
     <div *ngIf="getProdutosCarrinho">
       <div class="carrinho-vazio" *ngIf="!showComics">
-        <h5>Seu carrinho agora esta Vazio volte as compras..</h5>
+        <p>Seu carrinho está vazio volte as compras, clicando no botao abaixo.</p>
         <button class="btn btn-dark" (click)="irParaHome()">Voltar para home</button>
       </div>
 
