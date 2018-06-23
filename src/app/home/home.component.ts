@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { DataService } from '../services/data.service';
 import { Router } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss'],
   providers: [DataService]
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent{
   public obj: any;
   public heroes: any;
 
@@ -18,16 +18,11 @@ export class HomeComponent implements OnInit {
     this.getAllHeroes();
   }
 
-  ngOnInit() {
-  }
-
   getAllHeroes() {
     this.data.load()
       .then(data => {
         this.obj = data;
         this.heroes = this.obj.data.results;
-
-        console.log(data);
       });
   }
 
