@@ -1,11 +1,21 @@
 <app-bar-home></app-bar-home>
 
 <div class="container">
+  <div class="title-cards">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>Produtos</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
   <div class="wrapper-comics">
     <div class="row">
       <div class="col-md-3" *ngFor="let hero of heroes">
         <div class="card">
-          <img class="card-img-top" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}">
+          <img class="card-img-top" (click)="getDescription(hero.id)" src="{{hero.thumbnail.path}}.{{hero.thumbnail.extension}}">
           <div class="card-body">
             <h5 class="card-title">{{hero.series.name}}</h5>
             <button type="button" class="btn btn-primary" (click)="getDescription(hero.id)">Detalhes</button>
