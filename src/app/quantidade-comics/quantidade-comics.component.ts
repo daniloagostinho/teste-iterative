@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EventEmitterService } from '../event-emitter.service';
+import { EventEmitterService } from '../services/event-emitter.service';
 @Component({
   selector: 'app-quantidade-comics',
   templateUrl: './quantidade-comics.component.html',

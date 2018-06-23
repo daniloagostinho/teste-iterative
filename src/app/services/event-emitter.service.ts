@@ -13,16 +13,16 @@ export class EventEmitterService {
     [evento: string]: EventEmitter<any>
   } = {}
 
-  static get (nomeEvento:string): EventEmitter<any> {
+  static get(nomeEvento: string): EventEmitter<any> {
     if (!this.emitters[nomeEvento])
-        this.emitters[nomeEvento] = new EventEmitter<any>();
+      this.emitters[nomeEvento] = new EventEmitter<any>();
     return this.emitters[nomeEvento];
-}
+  }
 
-  static mostrarQuadrinho(nomeEvento: string): EventEmitter<any>{
+  static mostrarQuadrinho(nomeEvento: string): EventEmitter<any> {
     if (!this.showComicEvent[nomeEvento])
-    this.showComicEvent[nomeEvento] = new EventEmitter<any>();
-      return this.showComicEvent[nomeEvento];
+      this.showComicEvent[nomeEvento] = new EventEmitter<any>();
+    return this.showComicEvent[nomeEvento];
   }
 
   constructor() { }

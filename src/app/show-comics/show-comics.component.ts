@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { EventEmitterService } from '../event-emitter.service';
+import { EventEmitterService } from '../services/event-emitter.service';
 
 @Component({
   selector: 'app-show-comics',

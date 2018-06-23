@@ -1,6 +1,5 @@
-import { TestBed, inject } from '@angular/core/testing';
-
 import { EventEmitterService } from './event-emitter.service';
+import { TestBed, inject } from '@angular/core/testing';
 
 describe('EventEmitterService', () => {
   beforeEach(() => {

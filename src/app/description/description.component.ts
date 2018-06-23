@@ -1,10 +1,10 @@
+import { DataService } from './../services/data.service';
 import { Hero } from './../hero/hero.model';
 import { Component } from '@angular/core';
 
 import {ActivatedRoute} from '@angular/router';
-import { DataService } from '../data.service';
 import { Router } from '@angular/router';
-import { EventEmitterService } from '../event-emitter.service';
+import { EventEmitterService } from '../services/event-emitter.service';
 
 @Component({
   selector: 'app-description',

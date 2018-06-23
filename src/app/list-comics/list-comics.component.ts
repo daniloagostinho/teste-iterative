@@ -1,14 +1,14 @@
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
-import { EventEmitterService } from '../event-emitter.service';
+import { Component } from '@angular/core';
+import { EventEmitterService } from '../services/event-emitter.service';
 @Component({
   selector: 'app-list-comics',
   templateUrl: './list-comics.component.html',
   styleUrls: ['./list-comics.component.scss']
 })
-export class ListComicsComponent implements OnInit {
+export class ListComicsComponent {
 
-  public getProdutosCarrinho;
+  getProdutosCarrinho;
   keys;
   quantidade_comics;
   showComics;
@@ -21,11 +21,6 @@ export class ListComicsComponent implements OnInit {
       this.showComics = true;
     }
   }
-
-
-  ngOnInit() {
-  }
-
   irParaHome() {
     this.router.navigate(['home'])
   }
