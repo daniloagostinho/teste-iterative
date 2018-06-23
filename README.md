@@ -14,10 +14,6 @@ Para rodar o teste siga os seguintes passos:
 - `cd teste-iterative/`
 - `npm install`
 
-## Para rodar os testes com Karma digite o comando
-
-` ng test`
-
 ## Features implementadas 
 
 - [x] Usabilidade
@@ -50,5 +46,9 @@ O resultado se parecerá com isso:
 ## Servindo a Aplicação
 
 Para rodar a aplicaçao execute no terminal `ng serve` abra o seu navegador no endereço `http://localhost:4200/`.
+
+## Para rodar os testes com Karma digite o comando
+
+` ng test`
 
 Quaisquer duvidas podem entrar em contato comigo através do e-mail: danilodev.silva@gmail.com
