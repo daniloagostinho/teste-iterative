@@ -18,6 +18,17 @@ Para rodar o teste siga os seguintes passos:
 
 ` ng test`
 
+## Features implementadas 
+
+- [x] Usabilidade
+- [x] Criatividade
+- [x] Código limpo e organização em módulos
+- [x] Documentação de código
+- [x] Documentação do projeto (readme)
+- [x] Performance
+- [x] Acesso com performatico e com segurancaa Api da Marvel
+
+
 ## Servindo a Aplicação
 
 Para rodar o teste execute no terminal `ng serve` abra o seu navegador no endereço `http://localhost:4200/`.
