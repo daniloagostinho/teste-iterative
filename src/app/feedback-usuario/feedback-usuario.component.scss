@@ -1,15 +1,18 @@
 html {
-  background-color: #dde6f0;
+    background-color: #dde6f0;
 }
-.wrapper {
-  max-width: 500px;
-  margin: 50px auto;
-  text-align: center;
-  font-family: "Arial";
 
-  h2 {
-    color: green;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-  }
+.wrapper {
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: "Arial";
+    h2 {
+        color: green;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    }
+    .content-feedback {
+        margin-top: 140px;
+    }
 }

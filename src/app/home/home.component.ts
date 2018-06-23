@@ -16,12 +16,10 @@ export class HomeComponent implements OnInit {
     private data: DataService,
     private router: Router) {
     this.getAllHeroes();
-   }
+  }
 
-
-   ngOnInit() {
-    //localStorage.removeItem('compra');
-   }
+  ngOnInit() {
+  }
 
   getAllHeroes() {
     this.data.load()
@@ -29,15 +27,11 @@ export class HomeComponent implements OnInit {
         this.obj = data;
         this.heroes = this.obj.data.results;
 
-        console.log('todos os resultados >>>> ', this.heroes);
-
+        console.log(data);
       });
   }
 
-  getDescription(id:number){
-    console.log(id);
-
-    this.router.navigate(['description', {id: id}]);
+  getDescription(id: number) {
+    this.router.navigate(['description', { id: id }]);
   }
-
 }
