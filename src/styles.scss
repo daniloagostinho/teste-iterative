@@ -1,31 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Marvel');
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
-// html,
 body {
     font-family: 'Marvel', sans-serif;
     background: #fcfcfc;
     height: 100vh;
 }
 
-.header {
-    z-index: 99999;
-    width: 100%;
-    height: 70px;
-    background-color: #3b404e;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.091);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #cacaca;
-    font-weight: 100;
-    text-transform: uppercase;
-    letter-spacing: 0.3em;
+.header-bg {
+  background-color: #3b404e;
+  box-shadow: 0px 2px 40px 0px rgba(0, 0, 0, 0.091);
+  height: 70px;
+  color: #cacaca;
+  text-align: center;
+  letter-spacing: 0.3em;
+}
+.header-bg h4 {
+  margin-top: 20px;
+  font-weight: 100;
+}
+
+.car-shopping {
+  width: 157px;
+  height: 70px;
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 48px;
+  background: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.car-shopping img {
+  display: block;
+  margin: 20px auto;
 }
 
 .footer {
@@ -46,23 +53,6 @@ body {
         position: relative;
         top: 20px;
     }
-}
-
-.car-shopping {
-    width: 157px;
-    height: 70px;
-    float: right;
-    position: absolute;
-    top: 0px;
-    right: 48px;
-    background: #fff;
-    padding: 10px;
-    cursor: pointer;
-}
-
-.car-shopping img {
-    display: block;
-    margin: 30px auto;
 }
 
 .wrapper-comics {

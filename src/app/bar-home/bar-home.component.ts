@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import { Router } from '@angular/router';
 
@@ -7,12 +7,9 @@ import { Router } from '@angular/router';
   templateUrl: './bar-home.component.html',
   styleUrls: ['./bar-home.component.scss']
 })
-export class BarHomeComponent implements OnInit {
+export class BarHomeComponent {
 
   constructor(private router: Router) { }
-
-  ngOnInit() {
-  }
 
   irParaCarrinho() {
     this.router.navigate(['list-comics']);
