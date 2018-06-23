@@ -1,8 +1,8 @@
 <app-bar-home></app-bar-home>
 
-<div class='body'>
+<div class="content-list">
   <div class="message-usuario" *ngIf="!getProdutosCarrinho">
-    <h3>Desculpe mas nao foram adicionados nenhum item ainda! Voce pode voltar para lista quadrinhos clicando no botao a baixos.</h3>
+    <p>Desculpe mas nao foram adicionados nenhum item ainda! Voce pode voltar para lista quadrinhos clicando no botao a baixos.</p>
     <button (click)="irParaHome()">Voltar para home</button>
   </div>
   <div class='container'>
@@ -17,3 +17,5 @@
     </div>
   </div>
 </div>
+
+<app-footer></app-footer>

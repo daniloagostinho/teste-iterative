@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListComicsComponent } from './list-comics/list-comics.component';
 import { ShowComicsComponent } from './show-comics/show-comics.component';
 import { FeedbackUsuarioComponent } from './feedback-usuario/feedback-usuario.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 const appRoutes: Routes = [
@@ -44,7 +45,8 @@ const appRoutes: Routes = [
     QuantidadeComicsComponent,
     ListComicsComponent,
     ShowComicsComponent,
-    FeedbackUsuarioComponent
+    FeedbackUsuarioComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
