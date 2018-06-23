@@ -40,7 +40,7 @@ Abra seu navegador acessando o endereco:
 
 O resultado se parecerá com isso:
 
-
+![](https://raw.githubusercontent.com/daniloagostinho/teste-iterative/master/src/assets/screenshots/Compodoc.png)
 
 ## Servindo a Aplicação
 
