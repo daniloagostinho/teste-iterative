@@ -11,8 +11,8 @@ Para rodar o teste siga os seguintes passos:
 ` git clone https://github.com/daniloagostinho/teste-iterative.git`
 
 ## Instale as Dependências do projeto
-`cd test-iterative`
-`npm install`
+- `cd test-iterative/`
+- `npm install`
 
 ## Para rodar os testes com Karma digite o comando
 
