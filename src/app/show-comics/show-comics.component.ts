@@ -28,8 +28,12 @@ export class ShowComicsComponent implements OnInit {
   }
 
   removeComics() {
+
+    localStorage.clear();
+
     this.showComics = false;
 
+    EventEmitterService.get('textChange').emit(0);
     EventEmitterService.get('removeComics').emit(false);
   }
 

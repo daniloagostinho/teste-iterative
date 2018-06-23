@@ -25,11 +25,6 @@ export class ListComicsComponent implements OnInit {
   ngOnInit() {
   }
 
-
-  removerDoCarrinho() {
-    localStorage.clear();
-  }
-
   irParaHome() {
     this.router.navigate(['home'])
   }
