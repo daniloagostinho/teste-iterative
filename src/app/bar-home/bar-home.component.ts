@@ -18,4 +18,8 @@ export class BarHomeComponent implements OnInit {
     this.router.navigate(['list-comics']);
   }
 
+  irParaHome() {
+    this.router.navigate(['home'])
+  }
+
 }
