@@ -4,27 +4,26 @@
   <div class='body'>
     <div class='container'>
       <div class="wrapper-comics">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card-comic">
-            <img src="{{hero.thumb}}" class=""/>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card-comic">
+              <img src="{{hero.thumb}}" class="" />
+            </div>
+          </div>
+
+          <div class="col-sm-6">
+            <h1>{{hero.title}}</h1>
+            <p>{{hero.description}}</p>
+
+            <button class="btn btn-dark" (click)="getHomepage()">Voltar</button>
+
+            <button class="btn btn-info" (click)="verProdutosAdicionados()">Ver produtos adicionados</button>
+            <button class="btn btn-success" (click)="adcionarAoCarrinho()">Adicionar ao carrinho</button>
           </div>
         </div>
-
-        <div class="col-sm-6">
-          <h1>{{hero.title}}</h1>
-          <p>{{hero.description}}</p>
-
-          <button  class="btn btn-dark" (click)="getHomepage()">Voltar</button>
-
-          <button class="btn btn-info" (click)="verProdutosAdicionados()">Ver produtos adicionados</button>
-          <button class="btn btn-success" (click)="adcionarAoCarrinho()">Adicionar ao carrinho</button>
-        </div>
-      </div>
       </div>
     </div>
   </div>
 </div>
 
 <app-footer></app-footer>
-

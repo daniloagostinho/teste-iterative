@@ -16,28 +16,22 @@ export class HomeComponent implements OnInit {
     private data: DataService,
     private router: Router) {
     this.getAllHeroes();
-   }
+  }
 
-
-   ngOnInit() {
-    //localStorage.removeItem('compra');
-   }
+  ngOnInit() {
+  }
 
   getAllHeroes() {
     this.data.load()
       .then(data => {
         this.obj = data;
         this.heroes = this.obj.data.results;
-
-        console.log('todos os resultados >>>> ', this.heroes);
-
       });
   }
 
-  getDescription(id:number){
+  getDescription(id: number) {
     console.log(id);
 
-    this.router.navigate(['description', {id: id}]);
+    this.router.navigate(['description', { id: id }]);
   }
-
 }

@@ -1,14 +1,8 @@
-// .content-description{
-//   background-image: url('../../assets/img/bg_marvel.gif');
-//   width: 100%;
-//   height: 100vh;
-// }
-
-h1, p {
-  color: #3b404e;
-  font-family: 'Marvel', sans-serif;
+h1,
+p {
+    color: #3b404e;
+    font-family: 'Marvel', sans-serif;
 }
-
 
 img {
     max-width: 100%;
@@ -24,7 +18,7 @@ img {
 }
 
 .margin-cards {
-  margin-top: 110px;
+    margin-top: 110px;
 }
 
 .button-buy,
@@ -45,11 +39,12 @@ img {
     border-radius: 4px;
     position: relative;
     left: 160px;
-  }
-  .button-voltar {
-    background: blue;
-  }
+}
 
-  img {
+.button-voltar {
+    background: blue;
+}
+
+img {
     width: 64%;
 }
