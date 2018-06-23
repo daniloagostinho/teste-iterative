@@ -9,11 +9,10 @@
 
   <div class='container'>
     <div *ngIf="getProdutosCarrinho">
-      {{showComics}}
-        <div class="carrinho-vazio" *ngIf="!showComics">
-            <h5>Seu carrinho agora esta Vazio volte as compras..</h5>
-            <button (click)="irParaHome()">Voltar para home</button>
-          </div>
+      <div class="carrinho-vazio" *ngIf="!showComics">
+        <h5>Seu carrinho agora esta Vazio volte as compras..</h5>
+        <button class="btn btn-dark" (click)="irParaHome()">Voltar para home</button>
+      </div>
 
       <div *ngIf="showComics">
         <app-show-comics></app-show-comics>
@@ -21,6 +20,7 @@
 
     </div>
   </div>
+
 </div>
 
 <app-footer></app-footer>

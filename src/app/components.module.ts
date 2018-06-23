@@ -7,6 +7,7 @@ import { FeedbackUsuarioComponent } from './feedback-usuario/feedback-usuario.co
 import { HomeComponent } from './home/home.component';
 import { ListComicsComponent } from './list-comics/list-comics.component';
 import { ShowComicsComponent } from './show-comics/show-comics.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,9 @@ import { ShowComicsComponent } from './show-comics/show-comics.component';
     FeedbackUsuarioComponent,
     HomeComponent,
     ListComicsComponent,
-    ShowComicsComponent],
+    ShowComicsComponent,
+    FooterComponent
+    ],
   exports: [
     BarHomeComponent,
     QuantidadeComicsComponent,
