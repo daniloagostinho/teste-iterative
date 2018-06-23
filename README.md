@@ -38,7 +38,7 @@ O Compodoc já vem como dependencia de desenvolvimento, mas caso você encontre 
 
 `npm install -g "@compodoc/compodoc`
 
-Abra seu navegador acessando o endereco: 
+Se tudo der certo abra seu navegador acessando o endereco: 
 
 `http://127.0.0.1:8080`
 
