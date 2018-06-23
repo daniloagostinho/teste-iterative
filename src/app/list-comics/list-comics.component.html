@@ -9,7 +9,8 @@
 
   <div class='container'>
     <div *ngIf="getProdutosCarrinho">
-        <div *ngIf="!showComics">
+      {{showComics}}
+        <div class="carrinho-vazio" *ngIf="!showComics">
             <h5>Seu carrinho agora esta Vazio volte as compras..</h5>
             <button (click)="irParaHome()">Voltar para home</button>
           </div>

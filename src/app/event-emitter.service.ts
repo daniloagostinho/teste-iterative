@@ -19,10 +19,10 @@ export class EventEmitterService {
     return this.emitters[nomeEvento];
 }
 
-  static showComics(evento: string): EventEmitter<any>{
-    if (!this.showComicEvent[evento])
-    this.showComicEvent[evento] = new EventEmitter<any>();
-      return this.showComicEvent[evento];
+  static mostrarQuadrinho(nomeEvento: string): EventEmitter<any>{
+    if (!this.showComicEvent[nomeEvento])
+    this.showComicEvent[nomeEvento] = new EventEmitter<any>();
+      return this.showComicEvent[nomeEvento];
   }
 
   constructor() { }

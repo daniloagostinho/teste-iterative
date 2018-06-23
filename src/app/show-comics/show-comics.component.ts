@@ -34,7 +34,7 @@ export class ShowComicsComponent implements OnInit {
     EventEmitterService.get('textChange').emit(0);
 
 
-    EventEmitterService.showComics('evento').emit(false);
+    EventEmitterService.mostrarQuadrinho('mostrarMemsagemVazio').emit(false);
   }
 
 }

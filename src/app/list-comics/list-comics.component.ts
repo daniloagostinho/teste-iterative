@@ -14,7 +14,7 @@ export class ListComicsComponent implements OnInit {
   showComics;
   constructor(private router: Router) {
 
-    EventEmitterService.showComics('evento').subscribe(data => this.showComics = data);
+    EventEmitterService.mostrarQuadrinho('mostrarMemsagemVazio').subscribe(data => this.showComics = data);
     this.getProdutosCarrinho = JSON.parse(localStorage.getItem("compra"));
 
     if (this.getProdutosCarrinho) {
