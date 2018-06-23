@@ -50,4 +50,4 @@ O resultado se parecerá com isso:
 
 Para rodar a aplicaçao execute no terminal `ng serve` abra o seu navegador no endereço `http://localhost:4200/`.
 
-Quaisquer duvidas podem entrar em contato comigo atraves do e-mail: danilodev.silva@gmail.com
+Quaisquer duvidas podem entrar em contato comigo através do e-mail: danilodev.silva@gmail.com
