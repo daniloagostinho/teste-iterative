@@ -26,11 +26,11 @@ Para rodar o teste siga os seguintes passos:
 - [x] Documentação de código
 - [x] Documentação do projeto (readme)
 - [x] Performance
-- [x] Acesso com performatico e com segurancaa Api da Marvel
+- [x] Acesso com performance e seguranca de acesso a Api da Marvel
 
 ## Documentacao do teste
 
-Foi usado o [Compodoc](https://compodoc.app/) para gerar uma rica documentacao que aborda a arquiteura que foi utilizada. Voce pode visualiza-la digitando o comando no terminal:
+Foi usado o [Compodoc](https://compodoc.app/) para gerar uma rica documentação abordando a arquiteura que foi utilizada. Você pode visualizá-la digitando o comando no terminal:
 
 `compodoc -s`
 
