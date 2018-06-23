@@ -38,6 +38,10 @@ Abra seu navegador acessando o endereco:
 
 `http://127.0.0.1:8080`
 
+O resultado se parecerá com isso:
+
+
+
 ## Servindo a Aplicação
 
 Para rodar o teste execute no terminal `ng serve` abra o seu navegador no endereço `http://localhost:4200/`.
