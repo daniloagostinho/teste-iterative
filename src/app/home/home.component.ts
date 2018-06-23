@@ -26,12 +26,12 @@ export class HomeComponent implements OnInit {
       .then(data => {
         this.obj = data;
         this.heroes = this.obj.data.results;
+
+        console.log(data);
       });
   }
 
   getDescription(id: number) {
-    console.log(id);
-
     this.router.navigate(['description', { id: id }]);
   }
 }

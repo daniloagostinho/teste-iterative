@@ -24,6 +24,7 @@ export class QuantidadeComicsComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
 
   public hasChaveLocalStorage(key: string): boolean {

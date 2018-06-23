@@ -3,17 +3,21 @@
 <div class="content-list">
   <div class="message-usuario" *ngIf="!getProdutosCarrinho">
     <p>Desculpe mas nao foram adicionados nenhum item ainda! Voce pode voltar para lista quadrinhos clicando no botao a baixos.</p>
-    <button (click)="irParaHome()">Voltar para home</button>
+    <button class="btn btn-dark" (click)="irParaHome()">Voltar para home</button>
   </div>
+
+
   <div class='container'>
     <div *ngIf="getProdutosCarrinho">
-      <div *ngIf="!showComics">
-        <h3>Seu carrinho agora esta Vazio volte as compras..</h3>
-        <button (click)="irParaHome()">Voltar para home</button>
-      </div>
+        <div *ngIf="!showComics">
+            <h5>Seu carrinho agora esta Vazio volte as compras..</h5>
+            <button (click)="irParaHome()">Voltar para home</button>
+          </div>
+
       <div *ngIf="showComics">
         <app-show-comics></app-show-comics>
       </div>
+
     </div>
   </div>
 </div>

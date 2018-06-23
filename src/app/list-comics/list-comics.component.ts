@@ -13,7 +13,8 @@ export class ListComicsComponent implements OnInit {
   quantidade_comics;
   showComics;
   constructor(private router: Router) {
-    EventEmitterService.get('removeComics').subscribe(data => this.showComics = data);
+
+    EventEmitterService.showComics('evento').subscribe(data => this.showComics = data);
     this.getProdutosCarrinho = JSON.parse(localStorage.getItem("compra"));
 
     if (this.getProdutosCarrinho) {

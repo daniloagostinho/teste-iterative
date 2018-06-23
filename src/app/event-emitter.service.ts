@@ -10,8 +10,8 @@ export class EventEmitterService {
 
 
   private static showComicEvent: {
-    [comicEvent: string]: EventEmitter<any>
-  }
+    [evento: string]: EventEmitter<any>
+  } = {}
 
   static get (nomeEvento:string): EventEmitter<any> {
     if (!this.emitters[nomeEvento])
@@ -19,10 +19,10 @@ export class EventEmitterService {
     return this.emitters[nomeEvento];
 }
 
-  static showComics(removeComic: string) {
-    if (!this.showComicEvent[removeComic])
-    this.emitters[removeComic] = new EventEmitter<any>();
-      return this.emitters[removeComic];
+  static showComics(evento: string): EventEmitter<any>{
+    if (!this.showComicEvent[evento])
+    this.showComicEvent[evento] = new EventEmitter<any>();
+      return this.showComicEvent[evento];
   }
 
   constructor() { }
