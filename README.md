@@ -26,6 +26,7 @@ Para rodar o teste siga os seguintes passos:
 - [x] Documentação de código
 - [x] Documentação do projeto (readme)
 - [x] Performance
+- [x] Aplicação responsiva
 - [x] Acesso com performance e seguranca de acesso a Api da Marvel
 
 ## Documentacao do teste
