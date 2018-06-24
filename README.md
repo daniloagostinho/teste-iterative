@@ -10,7 +10,7 @@ Para rodar o teste siga os seguintes passos:
 
 ` git clone https://github.com/daniloagostinho/teste-iterative.git`
 
-## Instale as Dependências do projeto
+## Instale as dependências do projeto
 - `cd teste-iterative/`
 - `npm install`
 
@@ -27,7 +27,7 @@ Para rodar o teste siga os seguintes passos:
 
 ## Documentacao do teste
 
-Foi usado o [Compodoc](https://compodoc.app/) para gerar uma rica documentação abordando a arquiteura que foi utilizada. Você pode visualizá-la digitando o comando no terminal:
+Foi usado o [Compodoc](https://compodoc.app/) para gerar uma rica documentação abordando a arquitetura utilizada. Você pode visualizá-la digitando o comando no terminal:
 
 `compodoc -s`
 
@@ -35,11 +35,11 @@ O Compodoc já vem como dependencia de desenvolvimento, mas caso você encontre 
 
 `npm install -g "@compodoc/compodoc`
 
-Se tudo der certo abra seu navegador acessando o endereco: 
+Se tudo der certo abra seu navegador e acesse o endereço: 
 
 `http://127.0.0.1:8080`
 
-O resultado se parecerá com isso:
+O resultado parecerá com isto:
 
 ![Documentação do teste](https://raw.githubusercontent.com/daniloagostinho/teste-iterative/master/src/assets/screenshots/Compodoc.png)
 
@@ -51,4 +51,4 @@ Para rodar a aplicaçao execute no terminal `ng serve` abra o seu navegador no e
 
 ` ng test`
 
-Quaisquer duvidas podem entrar em contato comigo através do e-mail: danilodev.silva@gmail.com
+Caso tenham dúvidas podem entrar em contato comigo através do e-mail: danilodev.silva@gmail.com
