@@ -112,17 +112,20 @@
                         <a href="modules/ComponentsModule.html" data-type="entity-link">ComponentsModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-ComponentsModule-f2348d2dde6b1648ef150eb3e1bd32f0"
+                                        data-target="#xs-components-links-module-ComponentsModule-9d0f647958ab883567a4fdf68e83e3fe"
                                     >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="xs-components-links-module-ComponentsModule-f2348d2dde6b1648ef150eb3e1bd32f0"
+                                        id="xs-components-links-module-ComponentsModule-9d0f647958ab883567a4fdf68e83e3fe"
                                     >
                                         <li class="link">
                                             <a href="components/BarHomeComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">BarHomeComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/ConfirmPagamentoComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">ConfirmPagamentoComponent</a>
                                         </li>
                                         <li class="link">
                                             <a href="components/DescriptionComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">DescriptionComponent</a>
@@ -140,7 +143,13 @@
                                             <a href="components/ListComicsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">ListComicsComponent</a>
                                         </li>
                                         <li class="link">
+                                            <a href="components/NumberPikerComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NumberPikerComponent</a>
+                                        </li>
+                                        <li class="link">
                                             <a href="components/QuantidadeComicsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">QuantidadeComicsComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/RatingComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">RatingComponent</a>
                                         </li>
                                         <li class="link">
                                             <a href="components/ShowComicsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">ShowComicsComponent</a>
@@ -327,17 +336,20 @@
                         <a href="modules/ComponentsModule.html" data-type="entity-link">ComponentsModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-ComponentsModule-f2348d2dde6b1648ef150eb3e1bd32f0"
+                                        data-target="#components-links-module-ComponentsModule-9d0f647958ab883567a4fdf68e83e3fe"
 >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="components-links-module-ComponentsModule-f2348d2dde6b1648ef150eb3e1bd32f0"
+                                        id="components-links-module-ComponentsModule-9d0f647958ab883567a4fdf68e83e3fe"
 >
                                         <li class="link">
                                             <a href="components/BarHomeComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">BarHomeComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/ConfirmPagamentoComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">ConfirmPagamentoComponent</a>
                                         </li>
                                         <li class="link">
                                             <a href="components/DescriptionComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">DescriptionComponent</a>
@@ -355,7 +367,13 @@
                                             <a href="components/ListComicsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">ListComicsComponent</a>
                                         </li>
                                         <li class="link">
+                                            <a href="components/NumberPikerComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NumberPikerComponent</a>
+                                        </li>
+                                        <li class="link">
                                             <a href="components/QuantidadeComicsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">QuantidadeComicsComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/RatingComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">RatingComponent</a>
                                         </li>
                                         <li class="link">
                                             <a href="components/ShowComicsComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">ShowComicsComponent</a>
@@ -825,9 +843,20 @@ export class ListComicsComponent {
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;app-bar-home&gt;&lt;/app-bar-home&gt;
 
+&lt;div class&#x3D;&quot;container&quot;&gt;
+  &lt;div class&#x3D;&quot;title-cards&quot;&gt;
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+      &lt;div class&#x3D;&quot;col-md-12&quot;&gt;
+        &lt;h4&gt;Itens&lt;/h4&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
 &lt;div class&#x3D;&quot;content-list&quot;&gt;
   &lt;div class&#x3D;&quot;message-usuario&quot; *ngIf&#x3D;&quot;!getProdutosCarrinho&quot;&gt;
-    &lt;p&gt;Desculpe mas nao foram adicionados nenhum item ainda! Voce pode voltar para lista quadrinhos clicando no botao a baixos.&lt;/p&gt;
+    &lt;p&gt;Seu carrinho está vazio volte as compras, clicando no botao abaixo.&lt;/p&gt;
     &lt;button class&#x3D;&quot;btn btn-dark&quot; (click)&#x3D;&quot;irParaHome()&quot;&gt;Voltar para home&lt;/button&gt;
   &lt;/div&gt;
 
@@ -835,7 +864,7 @@ export class ListComicsComponent {
   &lt;div class&#x3D;&#x27;container&#x27;&gt;
     &lt;div *ngIf&#x3D;&quot;getProdutosCarrinho&quot;&gt;
       &lt;div class&#x3D;&quot;carrinho-vazio&quot; *ngIf&#x3D;&quot;!showComics&quot;&gt;
-        &lt;h5&gt;Seu carrinho agora esta Vazio volte as compras..&lt;/h5&gt;
+        &lt;p&gt;Seu carrinho está vazio volte as compras, clicando no botao abaixo.&lt;/p&gt;
         &lt;button class&#x3D;&quot;btn btn-dark&quot; (click)&#x3D;&quot;irParaHome()&quot;&gt;Voltar para home&lt;/button&gt;
       &lt;/div&gt;
 
@@ -877,8 +906,8 @@ export class ListComicsComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><app-bar-home></app-bar-home><div class="content-list">  <div class="message-usuario" *ngIf="!getProdutosCarrinho">    <p>Desculpe mas nao foram adicionados nenhum item ainda! Voce pode voltar para lista quadrinhos clicando no botao a baixos.</p>    <button class="btn btn-dark" (click)="irParaHome()">Voltar para home</button>  </div>  <div class=\'container\'>    <div *ngIf="getProdutosCarrinho">      <div class="carrinho-vazio" *ngIf="!showComics">        <h5>Seu carrinho agora esta Vazio volte as compras..</h5>        <button class="btn btn-dark" (click)="irParaHome()">Voltar para home</button>      </div>      <div *ngIf="showComics">        <app-show-comics></app-show-comics>      </div>    </div>  </div></div><app-footer></app-footer></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BarHomeComponent', 'selector': 'app-bar-home'},{'name': 'DescriptionComponent', 'selector': 'app-description'},{'name': 'FeedbackUsuarioComponent', 'selector': 'app-feedback-usuario'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ListComicsComponent', 'selector': 'app-list-comics'},{'name': 'QuantidadeComicsComponent', 'selector': 'app-quantidade-comics'},{'name': 'ShowComicsComponent', 'selector': 'app-show-comics'}];
+        var COMPONENT_TEMPLATE = '<div><app-bar-home></app-bar-home><div class="container">  <div class="title-cards">    <div class="row">      <div class="col-md-12">        <h4>Itens</h4>      </div>    </div>  </div></div><div class="content-list">  <div class="message-usuario" *ngIf="!getProdutosCarrinho">    <p>Seu carrinho está vazio volte as compras, clicando no botao abaixo.</p>    <button class="btn btn-dark" (click)="irParaHome()">Voltar para home</button>  </div>  <div class=\'container\'>    <div *ngIf="getProdutosCarrinho">      <div class="carrinho-vazio" *ngIf="!showComics">        <p>Seu carrinho está vazio volte as compras, clicando no botao abaixo.</p>        <button class="btn btn-dark" (click)="irParaHome()">Voltar para home</button>      </div>      <div *ngIf="showComics">        <app-show-comics></app-show-comics>      </div>    </div>  </div></div><app-footer></app-footer></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BarHomeComponent', 'selector': 'app-bar-home'},{'name': 'ConfirmPagamentoComponent', 'selector': 'app-confirm-pagamento'},{'name': 'DescriptionComponent', 'selector': 'app-description'},{'name': 'FeedbackUsuarioComponent', 'selector': 'app-feedback-usuario'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'ListComicsComponent', 'selector': 'app-list-comics'},{'name': 'NumberPikerComponent', 'selector': 'app-number-piker'},{'name': 'QuantidadeComicsComponent', 'selector': 'app-quantidade-comics'},{'name': 'RatingComponent', 'selector': 'app-rating'},{'name': 'ShowComicsComponent', 'selector': 'app-show-comics'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ListComicsComponent'};
 </script>
