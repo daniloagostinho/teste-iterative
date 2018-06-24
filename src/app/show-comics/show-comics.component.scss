@@ -16,7 +16,12 @@
     position: relative;
     left: 10px;
 }
-
+.descricao-iten-carrinho {
+  max-width: 78ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .button-remove-car {
     background: red;
     left: 0px;

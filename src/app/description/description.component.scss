@@ -49,6 +49,16 @@ img {
     width: 64%;
 }
 
+.img-cartao {
+  width: 32px;
+  height: 32px;
+}
+
+.img-boleto {
+  width: 32px;
+  height: 20px;
+}
+
 input[type="number"] {
   height: 47px;
   border-radius: 0px;
@@ -65,3 +75,13 @@ ul.creators-comics {
   }
 }
 
+ul.bandeira-cartoes {
+  list-style: none;
+  margin-left: -40px;
+
+  li {
+    font-size: 0.8rem;
+    // margin: 5px 0px 10px;
+    display: inline;
+  }
+}

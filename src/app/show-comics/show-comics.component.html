@@ -1,21 +1,27 @@
-<div class="wrapper-description">
-  <div class='body'>
-    <div class='container'>
-      <div class="wrapper-comics">
-        <div class="row">
-          <div class="col-sm-5">
+<div class="container">
+  <div class="container-pagamentos">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="card" style="width: 22rem;">
+          <div *ngIf="getProdutosCarrinho">
+            <img class="img" src="{{getProdutosCarrinho.thumb}}" alt="">
+          </div>
 
+          <div class="card-body">
             <div *ngIf="getProdutosCarrinho">
-              <img src="{{getProdutosCarrinho.thumb}}" alt="">
+              <h5 class="card-title">{{getProdutosCarrinho.title}}</h5>
+
+              <p class="card-text descricao-iten-carrinho">{{getProdutosCarrinho.description}}</p>
             </div>
-            <div *ngIf="getProdutosCarrinho">
-              <h4>{{getProdutosCarrinho.title}}</h4>
+            <p class="card-text">
+              <strong> subtotal</strong> ({{getProdutosCarrinho.quantidade}} produto)</p>
+            <p class="card-text text-success">frete- grátis</p>
 
-              <p>{{getProdutosCarrinho.description}}</p>
-            </div>
-
-            <button class="btn btn-danger" (click)="removeComics()">Remover do carrinho</button>
-
+            <h6>Total</h6>
+            <h5>US $ {{getProdutosCarrinho.price}}</h5>
+            <button class="btn btn-danger btn-block" (click)="removeComics()">Remover do carrinho</button>
+            <button class="btn btn-success btn-block" (click)="confirmCompra()">
+              <i class="fa fa-shopping-basket" aria-hidden="true"></i>Confirmar compra</button>
           </div>
         </div>
       </div>
