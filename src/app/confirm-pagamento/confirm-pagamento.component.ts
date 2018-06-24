@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Hero } from '../hero/hero.model';
+import { DataService } from '../services/data.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-confirm-pagamento',
@@ -6,10 +9,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./confirm-pagamento.component.scss']
 })
 export class ConfirmPagamentoComponent implements OnInit {
+  public getProdutosCarrinho;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(
+    public data: DataService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {
+    this.getProdutosCarrinho = JSON.parse(localStorage.getItem("compra"));
   }
 
+  ngOnInit() {
+    console.log(this.getProdutosCarrinho);
+  }
+
+  confirmCompra() {
+    this.router.navigate(['feedback-usuario'])
+  }
 }

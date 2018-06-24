@@ -22,6 +22,7 @@ export class HomeComponent{
     this.data.load()
       .then(data => {
         this.obj = data;
+          console.log(this.obj);
         this.heroes = this.obj.data.results;
       });
   }

@@ -3,7 +3,7 @@
 <div class="container">
   <div class="container-pagamentos">
     <div class="row">
-      <div class="col-sm-8">
+      <!-- <div class="col-sm-8">
           <h4>Produto</h4>
         <div class="container">
           <div class="row">
@@ -21,16 +21,21 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+
       <div class="col-sm-4">
-        <h4>resumo do pedido</h4>
-        <p>subtotal (1 produto)</p>
-        <p>frete</p>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{{getProdutosCarrinho.thumb}}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">{{getProdutosCarrinho.title}}</h5>
+            <p class="card-text">subtotal ({{getProdutosCarrinho.quantidade}} produto)</p>
+            <p class="card-text text-success">frete- grátis</p>
 
-        <h4>Total</h4>
-        <h5>200</h5>
-
-        <button class="btn btn-success btn-block" (click)="loadingFeedback()"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Confirmar compra</button>
+            <h6>Total</h6>
+            <h5>US {{getProdutosCarrinho.price}}</h5>
+            <button class="btn btn-success btn-block" (click)="confirmCompra()"><i class="fa fa-shopping-basket" aria-hidden="true"></i>Confirmar compra</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
