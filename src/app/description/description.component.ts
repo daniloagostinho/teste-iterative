@@ -17,6 +17,8 @@ export class DescriptionComponent {
   public hero: Hero;
   dadosss = 'ola';
 
+  valorInicial = 0;
+
   public minhaCompra: any;
   compra: any;
   texto: string;
@@ -32,10 +34,6 @@ export class DescriptionComponent {
 
     this.data.getDescription(this.id).then(data => {
       this.obj = data;
-
-      console.log(this.obj);
-
-
       this.hero.title = this.obj.data.results[0].title;
       this.hero.thumb = this.obj.data.results[0].thumbnail.path + "." + this.obj.data.results[0].thumbnail.extension;
       this.hero.description = this.obj.data.results[0].description,

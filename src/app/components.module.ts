@@ -10,6 +10,7 @@ import { ShowComicsComponent } from './show-comics/show-comics.component';
 import { FooterComponent } from './footer/footer.component';
 import { RatingComponent } from './rating/rating.component';
 import { ConfirmPagamentoComponent } from './confirm-pagamento/confirm-pagamento.component';
+import { NumberPikerComponent } from './number-piker/number-piker.component';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { ConfirmPagamentoComponent } from './confirm-pagamento/confirm-pagamento
     ShowComicsComponent,
     FooterComponent,
     RatingComponent,
-    ConfirmPagamentoComponent
+    ConfirmPagamentoComponent,
+    NumberPikerComponent
     ],
   exports: [
     BarHomeComponent,
@@ -36,7 +38,8 @@ import { ConfirmPagamentoComponent } from './confirm-pagamento/confirm-pagamento
     ListComicsComponent,
     ShowComicsComponent,
     RatingComponent,
-    ConfirmPagamentoComponent],
+    ConfirmPagamentoComponent,
+    NumberPikerComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class ComponentsModule { }
