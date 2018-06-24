@@ -15,6 +15,7 @@ export class DescriptionComponent {
   public id;
   public obj: any;
   public hero: Hero;
+  dadosss = 'ola';
 
   public minhaCompra: any;
   compra: any;
@@ -32,23 +33,31 @@ export class DescriptionComponent {
     this.data.getDescription(this.id).then(data => {
       this.obj = data;
 
-      console.log('todas as informacoes >>>>>>>> ', this.obj);
+      console.log(this.obj);
+
 
       this.hero.title = this.obj.data.results[0].title;
       this.hero.thumb = this.obj.data.results[0].thumbnail.path + "." + this.obj.data.results[0].thumbnail.extension;
       this.hero.description = this.obj.data.results[0].description,
       this.hero.price = this.obj.data.results[0].prices[0].price,
+      this.hero.series = this.obj.data.results[0].series.name,
+      this.hero.historias = this.obj.data.results[0].stories.items,
+      this.hero.numeroEdicao = this.obj.data.results[0].issueNumber,
+      this.hero.formato = this.obj.data.results[0].format,
+      this.hero.criadores = this.obj.data.results[0].creators.items,
       this.hero.quantidade = this.obj.data.count,
 
-      console.log('quantidade >>>>>', this.obj.data.count);
-
-      this.minhaCompra = {
-        title: this.hero.title,
-        thumb: this.hero.thumb,
-        description: this.hero.description,
-        price: this.hero.price,
-        quantidade: this.hero.quantidade = this.obj.data.count
-      }
+        this.minhaCompra = {
+          title: this.hero.title,
+          thumb: this.hero.thumb,
+          description: this.hero.description,
+          price: this.hero.price,
+          quantidade: this.hero.quantidade,
+          criadores: this.hero.criadores,
+          numeroEdicao: this.hero.numeroEdicao,
+          formato: this.hero.formato,
+          series: this.hero.series
+        }
 
       this.compra = JSON.stringify(this.minhaCompra);
     });

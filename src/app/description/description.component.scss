@@ -1,7 +1,7 @@
 h1,
 p {
     color: #3b404e;
-    font-family: 'Marvel', sans-serif;
+    font-size: 0.8rem;
 }
 
 img {
@@ -53,3 +53,15 @@ input[type="number"] {
   height: 47px;
   border-radius: 0px;
 }
+
+ul.creators-comics {
+  display: inline;
+  list-style: none;
+
+
+  li {
+    font-size: 0.8rem;
+    margin: 5px 0px 10px;
+  }
+}
+

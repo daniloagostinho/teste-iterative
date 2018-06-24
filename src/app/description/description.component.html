@@ -31,8 +31,7 @@
               <p>Mais informaçoes</p>
             </ul>
 
-            <h3>U$ 200,00</h3>
-            <!-- <p>{{hero.description}}</p> -->
+            <h3>U$ {{this.hero.price }}</h3>
             <input type="number" placeholder="Quantidade" />
             <button class="btn btn-primary btn-lg" (click)="getConfirmPagamento(hero.id)">Comprar agora</button>
             <button class="btn btn-outline-primary btn-lg" (click)="adcionarAoCarrinho()">Adicionar ao carrinho</button>
@@ -43,5 +42,41 @@
   </div>
 </div>
 
+<div class="content-description">
+  <div class='body'>
+    <div class="container">
+      <div class="col-sm-12">
 
+        <hr>
+        <h3>informações do produto</h3>
+
+        <strong>Descricao</strong>
+        <p>{{hero.description}}</p>
+
+        <strong>Classificacao</strong>
+        <app-rating></app-rating>
+
+        <strong>Criadores</strong>
+        <ul class="creators-comics">
+          <li *ngFor="let criador of hero.criadores">
+            {{criador.name}}
+          </li>
+        </ul>
+
+        <strong>preco </strong>
+        <p>{{hero.price}}</p>
+
+        <strong>Numero de Edicao: </strong>
+        <p>{{hero.numeroEdicao}}</p>
+
+        <strong>Formato </strong>
+        <p>{{hero.formato}}</p>
+
+        <strong>Quantidade </strong>
+        <p>{{hero.quantidade}}</p>
+
+      </div>
+    </div>
+  </div>
+</div>
 <app-footer></app-footer>

@@ -8,7 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { ListComicsComponent } from './list-comics/list-comics.component';
 import { ShowComicsComponent } from './show-comics/show-comics.component';
 import { FooterComponent } from './footer/footer.component';
-import { DetalheCompraComponent } from './detalhe-compra/detalhe-compra.component';
 import { RatingComponent } from './rating/rating.component';
 import { ConfirmPagamentoComponent } from './confirm-pagamento/confirm-pagamento.component';
 
@@ -25,7 +24,6 @@ import { ConfirmPagamentoComponent } from './confirm-pagamento/confirm-pagamento
     ListComicsComponent,
     ShowComicsComponent,
     FooterComponent,
-    DetalheCompraComponent,
     RatingComponent,
     ConfirmPagamentoComponent
     ],
@@ -37,7 +35,6 @@ import { ConfirmPagamentoComponent } from './confirm-pagamento/confirm-pagamento
     HomeComponent,
     ListComicsComponent,
     ShowComicsComponent,
-    DetalheCompraComponent,
     RatingComponent,
     ConfirmPagamentoComponent],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
